@@ -1,0 +1,36 @@
+.welcome-message {
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 10px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #554ab1;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+router-outlet {
+  margin-top: 20px; /* Espacement entre la barre de navigation et le contenu */
+}
+
+app-footer {
+  margin-top: 20px; /* Espacement entre le contenu et le pied de page */
+}
