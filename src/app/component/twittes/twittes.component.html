@@ -1,1 +1,11 @@
-<p>twittes works!</p>
+<div *ngIf="this.isConnected">
+	<h1>Voici les tweet du moment</h1>
+	<div *ngFor="let tweet of this.tweetList1">
+		<app-tweet-card [tweet]="tweet" (ring)="afficherElement($event)"></app-tweet-card>
+	</div>
+</div>
+<div *ngIf="!this.isConnected">
+	<h1>Vous devez être connecté pour voir les tweets</h1>
+	<button (click)="this.goToConnexion()">Se connecter</button>
+</div>
+<app-current [currentTweet]="this.currentTweet"></app-current>
